@@ -8,6 +8,8 @@ class CalculatorTest {
 
     private lateinit var calculator: Calculator
 
+    //Test de positivos
+
     @BeforeEach
     fun setUp() {
         calculator = Calculator()
@@ -46,7 +48,7 @@ class CalculatorTest {
         assertEquals("Cannot divide by zero", exception.message)
     }
 
-    //Test de negativos
+    //Test de negativos y ceros
 
     @Test
     fun testAdditionWithNegatives() {

@@ -45,7 +45,7 @@ class CalculatorTest {
         val exception = assertFailsWith<IllegalArgumentException> {
             calculator.divide(10.0, 0.0)
         }
-        assertEquals("Cannot divide by zero", exception.message)
+        assertEquals("No se puede dividir entre cero", exception.message)
     }
 
     //Test de negativos y ceros
